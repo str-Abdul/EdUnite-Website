@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 
@@ -41,12 +42,12 @@ const Home = () => {
               Our lady tutors are not just teachers—they are mentors who help bridge educational gaps and inspire students to achieve their best.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-block bg-white text-blue-400 px-8 py-3 rounded-full font-semibold shadow hover:bg-pink-100 border-2 border-gray-100 transition text-lg"
               >
                 Request a Free Demo
-              </a>
+              </Link>
 
               <a
                 href="tel:+923070340788"

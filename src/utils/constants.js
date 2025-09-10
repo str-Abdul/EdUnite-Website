@@ -37,16 +37,6 @@ export const FOOTER_LINKS = {
   company: [
     { name: "About Us", path: "/about" },
     { name: "Our Mission", path: "/about" },
-    { name: "Careers", path: "/careers" }
+    { name: "Contact Us", path: "/contact" },
   ],
-  support: [
-    { name: "Help Center", path: "/help" },
-    { name: "Contact Support", path: "/contact" },
-    { name: "FAQ", path: "/faq" }
-  ],
-  legal: [
-    { name: "Privacy Policy", path: "/privacy" },
-    { name: "Terms of Service", path: "/terms" },
-    { name: "Cookie Policy", path: "/cookies" }
-  ]
 }; 
