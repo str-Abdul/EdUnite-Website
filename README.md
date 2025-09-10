@@ -34,7 +34,6 @@ src/
 ├── pages/              # Page components
 │   ├── Home.jsx        # Home page
 │   ├── About.jsx       # About page
-│   ├── Courses.jsx     # Courses listing page
 │   └── Contact.jsx     # Contact page
 ├── utils/              # Utility functions and constants
 │   └── constants.js    # Static data and configuration
@@ -98,10 +97,7 @@ The project uses Tailwind CSS v4 with the new `@import "tailwindcss"` syntax.
 - Core values
 - Company story and statistics
 
-### Courses (`/courses`)
-- Course grid with filtering
-- Search functionality
-- Course details and enrollment options
+
 
 ### Contact (`/contact`)
 - Contact form with validation
@@ -123,63 +119,3 @@ The project uses Tailwind CSS v4 with the new `@import "tailwindcss"` syntax.
 - **Desktop**: 1024px and up
 - **Large Desktop**: 1280px and up
 
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
-
-### Netlify
-
-1. Build the project: `npm run build`
-2. Upload the `dist` folder to Netlify
-
-### Manual Deployment
-
-1. Build the project: `npm run build`
-2. Upload the `dist` folder to your web server
-
-## 🔍 Testing
-
-The project includes a test div on the home page to confirm Tailwind CSS is working:
-
-```jsx
-<div className="bg-red-500 text-white text-center py-4 font-bold">
-  🎉 Tailwind CSS is working! This red background confirms the setup.
-</div>
-```
-
-## 📝 Customization
-
-### Colors
-Update the primary color in `tailwind.config.js` and throughout the components.
-
-### Content
-Modify the data in `src/utils/constants.js` to update courses, features, and other content.
-
-### Styling
-Customize the design by modifying Tailwind classes in the components.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-For support or questions:
-- Email: info@edunite.com
-- Phone: +1 (555) 123-4567
-
----
-
-Built with ❤️ by the Edunite team
