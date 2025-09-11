@@ -38,7 +38,7 @@ const About = () => {
     { number: "20+", label: "Subjects Taught" },
     { number: "5K+", label: "Students Enrolled" },
     { number: "95%", label: "Success Rate" },
-    { number: "300+", label: "Expert Tutors" }
+    { number: "1k+", label: "Expert Tutors" }
   ];
 
   return (

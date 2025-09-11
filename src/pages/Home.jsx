@@ -162,8 +162,8 @@ const Home = () => {
         <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-400 mb-6 leading-tight flex flex-col items-center">
             Perfect Home<br />
-            Tuition in Karachi<br />
-            And Online Tution Globally
+            Tuition in Pakistan<br />
+            And Online Tuition Globally
             <img
               src="https://cdn-icons-png.flaticon.com/128/869/869196.png"
               alt="Flag Logo"

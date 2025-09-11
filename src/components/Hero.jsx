@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen, Users, Award } from 'lucide-react';
 
 const Hero = () => {
   const stats = [
-    { icon: BookOpen, value: '300+', label: 'Expert Tutors' },
+    { icon: BookOpen, value: '1k+', label: 'Expert Tutors' },
     { icon: Users, value: '5K+', label: 'Students Helped' },
     { icon: Award, value: '95%', label: 'Success Rate' }
   ];
