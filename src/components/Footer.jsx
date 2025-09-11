@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
 import { FOOTER_LINKS } from '../utils/constants';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61580258943611', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/edunite._/?hl=en', label: 'Instagram' },
   ];
 
   return (
@@ -58,11 +58,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          
         </div>
-
-
 
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-800">
@@ -77,6 +73,8 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                 >
@@ -91,4 +89,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

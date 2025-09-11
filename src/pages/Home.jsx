@@ -15,7 +15,7 @@ const Home = () => {
           {/* Full Left-Side Image */}
           <div className="w-full md:w-1/2">
             <img
-              src="https://png.pngtree.com/png-clipart/20241222/original/pngtree-teacher-day-professional-look-of-a-female-in-the-class-png-image_18129406.png"
+              src="https://img.freepik.com/premium-photo/portrait-asian-woman-teacher_1258-13821.jpg"
               alt="Lady Tutor"
               className="w-full h-full rounded-2xl object-cover shadow-2xl border-4 border-pink-600 bg-white"
             />
@@ -24,7 +24,7 @@ const Home = () => {
           {/* Content */}
           <div className="w-full md:w-1/2">
             <h2 className="text-4xl md:text-5xl font-bold text-pink-600 mb-6">
-              Lady Tutor Service Available
+              We Also Offer Lady Tutoring Service
             </h2>
             <p className="text-lg text-gray-700 mb-4">
               At Edunite, we proudly offer dedicated lady tutors for students and families who prefer female educators. Our platform empowers women in Karachi to share their expertise, build confidence, and create new earning opportunities.
@@ -50,7 +50,7 @@ const Home = () => {
               </Link>
 
               <a
-                href="tel:+923070340788"
+                href="tel:+923130228488"
                 className="inline-block bg-white text-blue-400 px-8 py-3 rounded-full font-semibold shadow hover:bg-pink-100 border-2 border-gray-100 transition text-lg"
               >
                 Call Us Now!

@@ -35,14 +35,14 @@ const About = () => {
   ];
 
   const stats = [
-    { number: "500+", label: "Courses Available" },
-    { number: "10K+", label: "Students Enrolled" },
+    { number: "20+", label: "Subjects Taught" },
+    { number: "5K+", label: "Students Enrolled" },
     { number: "95%", label: "Success Rate" },
-    { number: "50+", label: "Expert Tutors" }
+    { number: "300+", label: "Expert Tutors" }
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
@@ -72,11 +72,11 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Mission */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center lg:text-left"
+              className="text-center lg:text-left max-w-7xl mx-auto"
             >
               <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto lg:mx-0 mb-6">
                 <Target className="h-10 w-10 text-blue-400" />
@@ -92,11 +92,11 @@ const About = () => {
 
             {/* Vision */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-center lg:text-left"
+              className="text-center lg:text-left max-w-7xl mx-auto"
             >
               <div className="bg-indigo-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto lg:mx-0 mb-6">
                 <Eye className="h-10 w-10 text-blue-400" />
@@ -135,7 +135,7 @@ const About = () => {
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
@@ -155,7 +155,7 @@ const About = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
@@ -174,7 +174,7 @@ const About = () => {
             {values.map((value, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
@@ -200,9 +200,9 @@ const About = () => {
       {/* Story Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center relative overflow-hidden">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
@@ -232,7 +232,7 @@ const About = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
@@ -261,4 +261,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;
