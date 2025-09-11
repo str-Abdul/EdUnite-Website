@@ -5,6 +5,7 @@ export default function ContactForm() {
     name: '',
     email: '',
     contact: '',
+    location: '', // NEW
     details: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,7 +33,7 @@ export default function ContactForm() {
 
       if (response.ok) {
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', contact: '', details: '' });
+        setFormData({ name: '', email: '', contact: '', location: '', details: '' });
       } else {
         setSubmitStatus('error');
       }
@@ -48,7 +49,8 @@ export default function ContactForm() {
       <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-xl p-8 relative z-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">Request a Tutor</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
-          
+
+          {/* Name */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
               Name *
@@ -65,6 +67,7 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Email */}
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
               Email *
@@ -81,6 +84,7 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Contact */}
           <div>
             <label htmlFor="contact" className="block text-sm font-medium text-gray-700 mb-2">
               Contact Number *
@@ -97,8 +101,9 @@ export default function ContactForm() {
             />
           </div>
 
+          {/* Location - NEW */}
           <div>
-            <label htmlFor="Location" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
               Location *
             </label>
             <input
@@ -108,11 +113,12 @@ export default function ContactForm() {
               value={formData.location}
               onChange={handleChange}
               required
-              placeholder="Your location"
+              placeholder="City, area, or address"
               className="w-full px-4 py-3 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400"
             />
           </div>
 
+          {/* Details */}
           <div>
             <label htmlFor="details" className="block text-sm font-medium text-gray-700 mb-2">
               Details for Tutoring *
@@ -124,11 +130,12 @@ export default function ContactForm() {
               value={formData.details}
               onChange={handleChange}
               required
-              placeholder="Subjects, grade, preferred schedule, location, etc."
+              placeholder="Subjects, grade, preferred schedule, etc."
               className="w-full px-4 py-3 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400"
             />
           </div>
 
+          {/* Status Messages */}
           {submitStatus === 'success' && (
             <div className="text-green-600 bg-green-50 p-3 rounded mb-2 text-center">
               Message sent successfully! We'll get back to you soon.
@@ -140,57 +147,7 @@ export default function ContactForm() {
             </div>
           )}
 
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className={`w-full px-6 py-3 bg-blue-400 text-white font-semibold rounded-lg transition-all duration-200 ${
-              isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700 hover:shadow-lg'
-            }`}
-          >
-            {isSubmitting ? 'Sending...' : 'Request Tutor'}
-          </button>
-        </form>
-      </div>
-    </section>
-  );
-}
-
-              name="contact"
-              value={formData.contact}
-              onChange={handleChange}
-              required
-              placeholder="Your phone or WhatsApp number"
-              className="w-full px-4 py-3 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="details" className="block text-sm font-medium text-gray-700 mb-2">
-              Details for Tutoring *
-            </label>
-            <textarea
-              id="details"
-              name="details"
-              rows={5}
-              value={formData.details}
-              onChange={handleChange}
-              required
-              placeholder="Subjects, grade, preferred schedule, location, etc."
-              className="w-full px-4 py-3 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400"
-            />
-          </div>
-
-          {submitStatus === 'success' && (
-            <div className="text-green-600 bg-green-50 p-3 rounded mb-2 text-center">
-              Message sent successfully! We'll get back to you soon.
-            </div>
-          )}
-          {submitStatus === 'error' && (
-            <div className="text-red-600 bg-red-50 p-3 rounded mb-2 text-center">
-              Something went wrong. Please try again later.
-            </div>
-          )}
-
+          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
