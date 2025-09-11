@@ -29,7 +29,7 @@ const Navbar = () => {
             <img
               src={Logo}
               alt="Edunite Logo"
-              className="h-11 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
           </Link>
 
@@ -70,14 +70,18 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-gray-700 hover:text-blue-400 focus:outline-none focus:text-blue-400"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+<div className="md:hidden">
+  <button
+    onClick={toggleMenu}
+    className="bg-white p-2 rounded-md shadow focus:outline-none"
+  >
+    {isMenuOpen ? (
+      <X className="h-6 w-6 text-white" />
+    ) : (
+      <Menu className="h-6 w-6 text-white" />
+    )}
+  </button>
+</div>
         </div>
 
         {/* Mobile Navigation */}
@@ -93,6 +97,7 @@ const Navbar = () => {
                 >
                   {link.name}
                 </Link>
+        
               ))}
               {/* Social Icons for Mobile */}
               <div className="flex items-center mt-2 space-x-4 px-3">

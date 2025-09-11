@@ -10,24 +10,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 relative overflow-hidden">
-      {/* Animated SVG Blobs Background */}
-      <div className="absolute inset-0 w-full h-full -z-10 pointer-events-none">
-        <svg width="100%" height="100%">
-          <circle cx="20%" cy="30%" r="120" fill="#a5b4fc" opacity="0.15">
-            <animate attributeName="cx" values="20%;30%;20%" dur="10s" repeatCount="indefinite" />
-            <animate attributeName="cy" values="30%;40%;30%" dur="12s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="80%" cy="70%" r="100" fill="#f9a8d4" opacity="0.13">
-            <animate attributeName="cy" values="70%;60%;70%" dur="14s" repeatCount="indefinite" />
-            <animate attributeName="cx" values="80%;70%;80%" dur="11s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="50%" cy="10%" r="80" fill="#fef08a" opacity="0.11">
-            <animate attributeName="cy" values="10%;20%;10%" dur="13s" repeatCount="indefinite" />
-            <animate attributeName="cx" values="50%;60%;50%" dur="9s" repeatCount="indefinite" />
-          </circle>
-        </svg>
-      </div>
+    <section className="bg-gray-to-br from-gray-50 to-blue-50 py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -41,7 +24,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-400 leading-tight"
             >
               Find Your Perfect <span className="text-blue-400">Tutor</span>
             </motion.h1>
@@ -50,7 +33,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-gray-600 leading-relaxed"
+              className="text-xl text-white-600 leading-relaxed"
             >
               Get personalized tutoring that matches your learning style, schedule, and academic needs. 
               Our expert tutors are here to help you succeed in any subject or test preparation.
@@ -82,8 +65,8 @@ const Hero = () => {
                   <div className="flex justify-center mb-2">
                     <stat.icon className="h-8 w-8 text-blue-400" />
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
+                  <div className="text-2xl font-bold text-white-900">{stat.value}</div>
+                  <div className="text-sm text-white-600">{stat.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -127,4 +110,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero; 

@@ -101,7 +101,11 @@ const Home = () => {
           {/* Left: Heading and Button */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              EdUnite Tutor Academy – No. #1 Tutors In Karachi
+              EdUnite Tutor Academy – No. #1 Tutors In Pakistan <img
+              src="https://cdn-icons-png.flaticon.com/128/6622/6622242.png"
+              alt="Globe Logo"
+              className="inline-block mt-2 h-12 w-12"
+            />
             </h1>
           </div>
           {/* Right: Features */}
@@ -162,7 +166,7 @@ const Home = () => {
             And Online Tution Globally
             <img
               src="https://cdn-icons-png.flaticon.com/128/869/869196.png"
-              alt="Globe Logo"
+              alt="Flag Logo"
               className="inline-block mt-2 h-12 w-12"
             />
           </h1>

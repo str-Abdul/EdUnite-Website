@@ -8,7 +8,7 @@ export const FEATURES = [
   {
     id: 2,
     title: "Personalized Matching",
-    description: "Our AI-powered system matches you with the perfect tutor based on your needs, schedule, and preferences",
+    description: "We matches you with the perfect tutor based on your needs, schedule, and preferences",
     icon: "UserCheck"
   },
   {

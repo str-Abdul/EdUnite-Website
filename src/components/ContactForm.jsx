@@ -151,7 +151,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full px-6 py-3 bg-blue-400 text-white font-semibold rounded-lg transition-all duration-200 ${
+            className={`w-full px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg transition-all duration-200 ${
               isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700 hover:shadow-lg'
             }`}
           >
