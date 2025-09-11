@@ -6,7 +6,7 @@ import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/EdUnite-Website/">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>
