@@ -111,12 +111,12 @@ const Home = () => {
           {/* Right: Features */}
           <div>
             <p className="mb-4 text-lg">
-              Our standout feature that elevates EdUnite Tutors as <span className="font-bold">No. # 1 Tutors Academy in Karachi.</span>
+              Our standout feature that elevates EdUnite Tutors as <span className="font-bold">No. # 1 Tutors Academy in Pakistan.</span>
             </p>
             <ul className="space-y-3 text-base">
               <li className="flex items-start gap-2">
                 <Check className="text-black font-bold mt-1" size={22} strokeWidth={3} />
-                Providing the most trusted and expert home tutor in Karachi for all grades
+                Providing the most trusted and expert home tutor in Pakistan for all grades
               </li>
               <li className="flex items-start gap-2">
                 <Check className="text-black font-bold mt-1" size={22} strokeWidth={3} />
