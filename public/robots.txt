@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://edunitetutor.com/sitemap.xml
-
+Sitemap: https://www.edunitetutor.com/sitemap.xml
