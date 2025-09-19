@@ -29,11 +29,24 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">ahtishamahmedb68@gmail.com</span>
+                <a
+                  href="mailto:ahtishamahmedb68@gmail.com?subject=Tutoring%20Inquiry%20from%20EdUnite%20Website&body=Hello%20EdUnite%20Team%2C%0A%0AI%20am%20interested%20in%20your%20tutoring%20services.%20Please%20provide%20me%20with%20more%20details.%0A%0AThank%20you."
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ahtishamahmedb68@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+92 3700340788</span>
+                <a
+                  href="tel:+923700340788"
+                  className="text-gray-300 hover:text-blue-400 transition-colors duration-200 block md:inline"
+                  style={{ wordBreak: 'break-all' }}
+                >
+                  +92 3700340788
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
