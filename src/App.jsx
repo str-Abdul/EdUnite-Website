@@ -6,11 +6,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import FloatingButtons from './components/FloatingButtons';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       {/* Fixed Navbar */}
       <Navbar className="fixed top-0 left-0 w-full z-50" />
 
