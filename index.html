@@ -9,6 +9,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preload" href="/favicon.png" as="image" />
 
     <!-- SEO Meta Tags -->
     <meta
@@ -20,6 +21,8 @@
       content="home tutor Karachi, online tutor Pakistan, female tutors, private tuition, EdUnite Tutor Academy, math tutor, science tutor, English tuition, O/A Levels"
     />
     <meta name="author" content="EdUnite Tutor Academy" />
+    <meta name="language" content="English" />
+    <meta http-equiv="Content-Language" content="en" />
 
     <!-- Open Graph (Social Media Preview) -->
     <meta property="og:title" content="EdUnite Tutor Academy – Best Tutors in Pakistan" />
@@ -27,8 +30,8 @@
       property="og:description"
       content="Find trusted home and online tutors in Karachi and across Pakistan. Request a free demo class today!"
     />
-    <meta property="og:image" content="https://edunitetutor.com/preview.jpg" />
-    <meta property="og:url" content="https://edunitetutor.com" />
+    <meta property="og:image" content="https://www.edunitetutor.com/preview.jpg" />
+    <meta property="og:url" content="https://www.edunitetutor.com" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
@@ -38,13 +41,38 @@
       name="twitter:description"
       content="Find trusted home and online tutors in Karachi and across Pakistan. Request a free demo today!"
     />
-    <meta name="twitter:image" content="https://edunitetutor.com/preview.jpg" />
+    <meta name="twitter:image" content="https://www.edunitetutor.com/preview.jpg" />
 
-    <!-- Canonical (avoids duplicate www/non-www issue) -->
+    <!-- Canonical (avoid duplicate www/non-www issue) -->
     <link rel="canonical" href="https://www.edunitetutor.com/" />
 
     <!-- Robots (extra hint for crawlers) -->
     <meta name="robots" content="index, follow" />
+
+    <!-- Mobile & UI Enhancements -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "EdUnite Tutor Academy",
+        "url": "https://www.edunitetutor.com",
+        "logo": "https://www.edunitetutor.com/favicon.png",
+        "sameAs": [
+          "https://www.facebook.com/edunitetutor",
+          "https://www.instagram.com/edunitetutor"
+        ],
+        "description": "EdUnite Tutor Academy connects students with expert home and online tutors across Pakistan.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Karachi",
+          "addressCountry": "PK"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

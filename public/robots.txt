@@ -1,4 +1,9 @@
+# Allow all search engines to crawl the site
 User-agent: *
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
 Allow: /
 
+# Sitemap location
 Sitemap: https://www.edunitetutor.com/sitemap.xml
